@@ -1,0 +1,737 @@
+body {
+    margin: 0;
+}
+h2, p {
+    margin: 0;
+}
+
+/* Header */
+header {
+    width: 100%;
+    max-width: 1490px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    position: relative;
+    background: linear-gradient(262.71deg, #7D0EC1 9.77%, rgba(0, 255, 240, 0.8) 99.54%);
+    border-radius: 10px;
+}
+label {
+    display: none;
+}
+nav ul li {
+    display: flex;
+    gap: 16px;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+}
+li {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+li {
+    margin-right: 25px;
+}
+ul li a:hover {
+    color: #00cbf9;
+}
+@media screen and (max-width:600px) {
+
+    .main_title {
+        font-size: 50%;
+    }
+
+    .footer_block1 {
+        display: none;
+    }
+    .nain_img_container {
+        display: none;
+    }
+    .img_tesla {
+        height: 35px;
+        width: 35px;
+    }
+    .main_title {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    header{
+        width: 360px;
+        margin: auto;
+    }
+    label {
+        display: block;
+    }
+    nav {
+        width: 150px;
+        position: absolute;
+        background-color: antiquewhite;
+        top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    nav label {
+        text-align: right;
+    }
+
+    nav ul li a, nav label {
+        color: #000000;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    input:checked ~ nav{
+        visibility: visible;
+        opacity: 1;
+    }
+    .card_container {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+.logo {
+    animation: logo 5s;
+}
+@keyframes logo {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+} 
+
+.img_tesla, nav ul li a, label {
+    color: #000000;
+}
+.img_tesla {
+    width: 147px;
+    height: 72px;
+}
+
+.menu_bar {
+    width: 35px;
+    height: 35px;
+}
+.X-mark {
+    width: 35px;
+    height: 35px;
+}
+/* Main */
+.main {
+    background: linear-gradient(262.71deg, #7D0EC1 9.77%, rgba(0, 255, 240, 0.8) 99.54%);
+    border-radius: 100% 0% 0% 0% / 100% 100% 10% 0%;
+    height: 250px;
+}
+.main_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main {
+    height: 637px;
+}
+.main_title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 110px;
+    color: #313030;
+}
+.main_text {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 52px;
+    color: #2400FF;
+}
+.main_car {
+    width: 350px;
+    height: 350px;
+}
+li {
+    align-items: center;
+}
+li > p {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 55px;
+    color: #282727;
+}
+/* Card */
+.card_container > h2 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 55px;
+    color: #000000;
+    margin-left: 10px;
+}
+.card_container > h2:hover {
+    color: #00f84a;
+}
+.card_container {
+    background-color: antiquewhite;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    border-radius: 5px;
+}
+.card_container:hover {
+    transform: translatey(-5px);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: linear;
+    transition: 0.3s;
+}
+
+#card {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.BMW {
+    height: 198px;
+    max-width: 100%;
+    width: 45.5vh;
+    border-radius: 12px;
+    margin-top: 5px;
+}
+.info_car {
+    justify-content: center;
+}
+.electricity {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0;
+    color: #000000;
+    margin-left: 5px;
+}
+.info_car {
+    align-items: center;
+    margin-left: 10px;
+}
+.electricity_card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.electricity_card > img {
+    height: 40px;
+    width: 40px;
+    align-items: center;
+}
+.Buy_btn {
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    background-color: #D96565;
+    color: white;
+    color: #FFF;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-weight: 600;
+    width: 270px;
+    margin-bottom: 20px;
+}
+.button {
+    justify-content: center;
+    display: flex;
+}
+.Buy_btn:hover {
+    border: 2px solid #D96565;
+    background-color: #FFF;
+    color: #D96565;
+    animation: bounce 1s;
+}
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+/* Parallax */
+
+.parallax {
+    margin-top: 50px;
+    background-image: url("/img/Parea.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax > p {
+    justify-content: center;
+    align-items: center;
+}
+.parallax_block {
+    height: 100px;
+    background: rgb(0,255,240);
+    background: radial-gradient(circle, rgba(0,255,240,1) 0%, rgba(125,14,193,1) 100%);
+    display: flex;
+    justify-content: space-around;
+}
+.parallax1 {
+    margin-top: 0px;
+    background-image: url("/img/sellle.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax1 > p {
+    justify-content: center;
+    align-items: center;
+}
+.parallax_block1 {
+    height: 100px;
+    background: rgb(0,255,240);
+    background: radial-gradient(circle, rgba(0,255,240,1) 0%, rgba(125,14,193,1) 100%);
+    display: flex;
+    justify-content: space-around;
+}
+.marquee {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    color: #100f0f;
+    font-size: 25px;
+}
+/* Footer */
+#footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background: rgb(0,255,240);
+    background: radial-gradient(circle, rgba(0,255,240,1) 0%, rgba(125,14,193,1) 100%);
+}
+.footer_title {
+    font-family: 'ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.footer_title:after {
+    content: url(/img/Vector.png);
+    margin-left: 5px;
+}
+.footer_block1 {
+    margin-top: 87px;
+    margin-left: 104px;
+}
+.footer_block2 {
+    margin-top: 87px;
+}
+.footer_title1 {
+    font-family: 'ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    text-transform: capitalize;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.footer_text1 {
+    font-family: 'ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    white-space: pre-line;
+    cursor: pointer;
+}
+.footer_div {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_div::before {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 18px;
+    content: url(img/locate.png);
+}
+
+.footer_email {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+.contacts {
+    margin-left: 0;
+}
+.footer_contacts::before {
+    content: url(img/E-mail.png);
+    margin-right: 16px;
+}
+.footer_contacts {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.e-mail {
+    font-family: 'ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    white-space: pre-line;
+}
+
+.phone_num {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.phone_num::before {
+    content: url(img/phone.png);
+    margin-right: 16px;
+}
+.footer_block4 {
+    margin-top: 0;
+    margin-right: 165px;
+}
+.footer_text1:hover {
+    color: #D61F00;
+}
+.footer_title1:hover {
+    color: #D61F00;
+}
+
+.Tesla_logo_white {
+    width: 163px;
+    height: 34px;
+}
+.map {
+    background: url(img/map.png);
+    max-width: 100%;
+    width: 600vh;
+    height: 120px;
+}
+
+
+/* Buy Html */
+.car_iskiz {
+    position: absolute;
+    opacity: 0.5;
+    transform: translateX(80px);
+}
+.Zayavka_title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px;
+}
+.Zayavka_text {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    white-space: pre-line;
+    margin: 20px;
+}
+.Zayavka_form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Zayavka {
+    background: linear-gradient(262.71deg, #7D0EC1 9.77%, rgba(0, 255, 240, 0.8) 99.54%);
+    border-radius: 100% 0% 0% 0% / 100% 100% 10% 0%; 
+    height: 700px;
+    position: relative;
+}
+.form {
+    border: none;
+    border-radius: 15px;
+    width: 400px;
+    height: 25px;
+    padding: 25px 180px 25px 40px;
+    position: relative;
+    opacity: 0.8;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form::placeholder {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 300;
+    color: black;
+}
+.Zayavka_form_container {
+    align-items: center;
+}
+.email {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    transform: translateY(17px);
+    z-index: 2;
+}
+
+.form:focus {
+    animation: 20s;
+    outline: none;
+    border: 1px solid rgb(45, 61, 232);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Zayavka_form_text {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    color: #000000;
+}
+.button_block {
+    display: flex;
+    justify-content: space-evenly;
+}
+.form_button {
+    padding: 20px 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(262.71deg, #7D0EC1 9.77%, rgba(0, 255, 240, 0.8) 99.54%);
+    transition: 5s;
+}
+.form_button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: linear-gradient(137deg, #F8D000 0%, #FF00C7 100%);
+    transition-delay:1s;
+}
+/* Bank Card */
+.Bank_card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(137deg, #F8D000 0%, #FF00C7 100%);
+    border-radius: 100% 0% 0% 0% / 100% 100% 10% 0%; 
+    height: 700px;
+}
+.form_bank {
+    border: none;
+    border-radius: 15px;
+    padding: 25px 460px 25px 50px;
+    margin: 16px auto;
+    position: relative;
+    opacity: 0.8;
+}
+.form_bank:focus {
+    animation: 20s;
+    outline: none;
+    border: 2px solid rgb(3, 138, 216);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.form_bank1 {
+    border: none;
+    border-radius: 15px;
+    padding: 25px 120px 25px 50px;
+    margin: 16px auto;
+    position: relative;
+    opacity: 0.8;
+}
+.Bank_card_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form_button1 {
+    padding: 20px 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(137deg, #F8D000 0%, #FF00C7 100%);
+    transition: 1s;
+}
+.form_button1:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: linear-gradient(262.71deg, #7D0EC1 9.77%, rgba(0, 255, 240, 0.8) 99.54%);
+    transition-delay:1s;
+}
+.file {
+    border: 1px solid #c63a3a;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.Bank_title {
+    text-align: center;
+    font-family: 'RocknRoll One', sans-serif;
+    color: #00f84a;
+    font-size: 500;
+    font-size: 50px;
+}
+.ACP {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+::-webkit-file-upload-button {
+    color: white;
+    background: linear-gradient(137deg, #F8D000 0%, #FF00C7 100%);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+::-webkit-file-upload-button:hover {
+    background: linear-gradient(262.71deg, #7D0EC1 9.77%, rgba(0, 255, 240, 0.8) 99.54%);
+}
+.form_p {
+    margin-right: 10px;
+    font-family: 'RocknRoll One', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+/* Advanced menu */
+.Advanced_block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card_about {
+    background-color: bisque;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.Advanced_card_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.Advanced_title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+.Advanced_text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.card_about_img {
+    width: 120px;
+    height: 120px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card_about_btn {
+    margin: 10px 15px;
+    background: none;
+    border-radius: 5px;
+    border: solid 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 5px;
+}
+.card_about > a {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.Advanced_block {
+    background: linear-gradient(137deg, #F8D000 0%, #FF00C7 100%);
+    height: 700px;
+}
+.card_about_btn:hover {
+    border: none;
+    color: #FFFFFF;
+    background: rgb(131,58,180);
+    background: linear-gradient(270deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 5px;
+}
+.card_about:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+.card_about_text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Media */
+@media (max-width: 600px) {
+    .card_container {
+        margin-top: 10px;
+    }
+    h2, p {
+        font-size: 50%;
+    }
+    .form {
+        padding: 15px 15px 15px 20px;
+    }
+    .form_button {
+        padding: 10px 20px;
+    }
+    .card_about {
+        margin-top: 20px;
+        margin-right: 5px;
+    }
+}
+
